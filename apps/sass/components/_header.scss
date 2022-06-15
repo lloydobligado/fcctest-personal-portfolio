@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+
+    &__logo {
+
+    }
+
+    &__nav {
+        &--link {
+            display: flex;
+        
+        }
+    }
+}
