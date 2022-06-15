@@ -1,0 +1,29 @@
+@use 'functions' as f;
+
+$desktop-first: (
+    "sm": f.em(575.98),     //mobile
+    "md": f.em(767.98),     //landscape mobile
+    "lg": f.em(991.98),     //tablet
+    "xl": f.em(1199.98),    //desktop
+    "xxl": f.em(1439.98),   //large desktop
+);
+
+@mixin breakpoint($size) {
+    @media (max-width: map-get($desktop-first, $size)) {
+        @content; 
+    }
+}
+
+$mobile-first: (
+    "sm": f.em(576),    //mobile
+    "md": f.em(768),    //landscape mobile
+    "lg": f.em(992),    //tablet
+    "xl": f.em(1200),   //desktop
+    "xxl": f.em(1440),  //large desktop
+);
+
+@mixin breakpoint-mobile($size) {
+    @media (min-width: map-get($mobile-first, $size)) {
+        @content; 
+    }
+}
