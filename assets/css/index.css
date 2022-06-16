@@ -1,4 +1,9 @@
-/*# sourceMappingURL=index.css.map */ display: flex;
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
 }
 .flex-fd-c {
   flex-direction: column;
@@ -14,4 +19,17 @@
 }
 .flex-ai-s {
   align-items: stretch;
+}/*# sourceMappingURL=index.css.map */ 100vw;
+}
+@media (max-width: 74.99875em) {
+  section {
+    height: 80vh;
+    width: 80vw;
+  }
+}
+@media (max-width: 61.99875em) {
+  section {
+    height: 70vh;
+    width: 70vw;
+  }
 }/*# sourceMappingURL=index.css.map */
